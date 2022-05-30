@@ -161,9 +161,9 @@ export default {
     methods: {
         forceRerender() {
             this.reload += 1;
-            setTimeout(function() {
+            /*setTimeout(function() {
                 window.location.reload();
-            }, 5000);
+            }, 5000);*/
         },
         logout() 
             {

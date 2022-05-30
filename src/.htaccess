@@ -11,6 +11,6 @@ Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type,
    RewriteRule . /index.html [L]
  </IfModule>
 
-RewriteEngine On 
-RewriteCond %{HTTPS}  !=on 
-RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L] 
+#RewriteEngine On 
+#RewriteCond %{HTTPS}  !=on 
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L] 
