@@ -60,7 +60,7 @@ export default {
             this.get_user();
             this.get_role();
             var self = this;
-            axios.post('http://192.168.0.101:80/php/index.php',{
+            axios.post('https://192.168.0.101:80/php/index.php',{
                 action: 'auth_user',
                 data: this.username,
                 pass: this.pass
@@ -70,7 +70,7 @@ export default {
         },
         get_user: function() {
             var self = this;
-            axios.post('http://192.168.0.101:80/php/index.php', {
+            axios.post('https://192.168.0.101:80/php/index.php', {
                 action: 'get_user',
                 data: this.username,
                 pass: this.pass
@@ -81,7 +81,7 @@ export default {
         },
         get_role: function() {
             var self = this;
-            axios.post('http://192.168.0.101:80/php/index.php', {
+            axios.post('https://192.168.0.101:80/php/index.php', {
                 action: 'get_role',
                 data: this.username,
                 pass: this.pass
